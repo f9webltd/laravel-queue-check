@@ -1,3 +1,8 @@
+[![Latest Stable Version](https://poser.pugx.org/f9webltd/laravel-queue-check/v)](https://packagist.org/packages/f9webltd/laravel-queue-check)
+[![Build Status](https://travis-ci.org/f9webltd/laravel-queue-check.svg?branch=master)](https://travis-ci.org/f9webltd/laravel-queue-check)
+[![StyleCI Status](https://github.styleci.io/repos/272114358/shield)](https://github.styleci.io/repos/272114358)
+[![License](https://poser.pugx.org/f9webltd/laravel-validation-rules/license)](https://packagist.org/packages/f9webltd/laravel-validation-rules)
+
 # Laravel Redis Queue Check
 
 A crude and simple [Laravel console command](https://laravel.com/docs/master/artisan) to determine if your Redis queue worker is running.

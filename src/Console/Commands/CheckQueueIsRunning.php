@@ -83,7 +83,7 @@ class CheckQueueIsRunning extends Command
     /**
      * @return \Symfony\Component\Process\Process|mixed
      */
-    private function getProcess()
+    public function getProcess()
     {
         if (null === $this->process) {
             return new Process(['ps', 'aux']);
