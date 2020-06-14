@@ -23,6 +23,12 @@ PHP >= 7.2, Laravel >= 5.8.
 composer require f9webltd/laravel-queue-check
 ```
 
+Publish the configuration file:
+
+``` bash
+vendor:publish --provider="F9Web\QueueCheck\CheckQueueServiceProvider"
+```
+
 ## Documentation
 
 ### Configuration Settings
