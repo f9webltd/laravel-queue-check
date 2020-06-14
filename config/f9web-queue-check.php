@@ -2,8 +2,10 @@
 
 return [
 
-    'expected-output' => 'artisan queue:work redis --queue=live --sleep=3 --tries=3',
+    // the expected process, in full or partial
+    'expected-output' => 'artisan queue:work redis',
 
+    // the expected number rof processes
     'processes' => 8,
 
 ];

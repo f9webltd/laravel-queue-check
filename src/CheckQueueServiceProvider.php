@@ -23,8 +23,6 @@ class CheckQueueServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__.'/../config/f9web-queue-check.php', 'f9web-queue-check');
 
-        // $this->app->bind('queue:check-running', CheckQueueIsRunning::class);
-
         $this->commands([
             CheckQueueIsRunning::class
         ]);

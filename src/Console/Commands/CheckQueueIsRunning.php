@@ -19,7 +19,7 @@ class CheckQueueIsRunning extends Command
      *
      * @var string
      */
-    protected $signature = 'f9web:check-queue-is-running';
+    protected $signature = 'f9web:queue-check';
 
     /**
      * The console command description.
