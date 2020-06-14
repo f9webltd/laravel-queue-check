@@ -20,7 +20,7 @@ PHP >= 7.2, Laravel >= 5.8.
 ## Installation
 
 ``` bash
-composer require f9webltd/laravel-queue-heartbeat
+composer require f9webltd/laravel-queue-check
 ```
 
 ## Documentation
