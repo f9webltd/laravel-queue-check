@@ -4,7 +4,6 @@ namespace F9Web\QueueCheck;
 
 use F9Web\QueueCheck\Console\Commands\CheckQueueIsRunning;
 use Illuminate\Support\ServiceProvider;
-
 use function config_path;
 
 class CheckQueueServiceProvider extends ServiceProvider
@@ -24,7 +23,7 @@ class CheckQueueServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/f9web-queue-check.php', 'f9web-queue-check');
 
         $this->commands([
-            CheckQueueIsRunning::class
+            CheckQueueIsRunning::class,
         ]);
     }
 }

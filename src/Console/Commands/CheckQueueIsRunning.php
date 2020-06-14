@@ -8,7 +8,6 @@ use F9Web\QueueCheck\Events\QueueCheckFailed;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 use Symfony\Component\Process\Process;
-
 use function event;
 use function explode;
 

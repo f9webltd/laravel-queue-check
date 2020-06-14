@@ -7,14 +7,13 @@ use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Symfony\Component\Process\Process;
 use Mockery as m;
 use F9Web\QueueCheck\Console\Commands\CheckQueueIsRunning;
-
 use function file_get_contents;
 use function tap;
 
 abstract class TestCase extends OrchestraTestCase
 {
     /** @var CheckQueueIsRunning */
-    protected $command ;
+    protected $command;
 
     public function setUp(): void
     {
@@ -22,6 +21,7 @@ abstract class TestCase extends OrchestraTestCase
 
         $this->command = new CheckQueueIsRunning();
     }
+
     /**
      * @param  \Illuminate\Foundation\Application  $app
      * @return array|string[]
