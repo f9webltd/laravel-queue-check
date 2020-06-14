@@ -1,0 +1,58 @@
+{
+  "name": "f9webltd/laravel-queue-check",
+  "description": "Crudely, check if your Redis queue worker is running",
+  "keywords": [
+    "laravel",
+    "laravel redis",
+    "laravel redis queue",
+    "monitor laravel queue",
+    "check redis queue worker",
+    "check redis queue"
+  ],
+  "homepage": "https://github.com/f9webltd/laravel-queue-check",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rob Allport",
+      "email": "rob@f9web.co.uk",
+      "homepage": "https://www.f9web.co.uk",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "illuminate/config": "5.8.* || ^6.0 || ^7.0",
+    "illuminate/console": "5.8.* || ^6.0 || ^7.0",
+    "illuminate/support": "5.8.* || ^6.0 || ^7.0",
+    "symfony/process": "^5.1"
+  },
+  "require-dev": {
+    "orchestra/testbench": ">=3.8",
+    "phpunit/phpunit": "^7.0|^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "F9Web\\QueueCheck\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "F9Web\\QueueCheck\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+          "F9Web\\QueueCheck\\CheckQueueServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

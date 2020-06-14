@@ -1,0 +1,10 @@
+akzonob+  841732  0.0  1.1 440508 45196 ?        S    Jun09   2:36 php artisan horizon:work redis --delay=0 --memory=128 --queue=default --sleep=3 --timeout=60 --tries=3 --supervisor=abc:supervisor-1
+akzonob+  841733  0.0  1.1 440480 45384 ?        S    Jun09   2:37 php artisan horizon:work redis --delay=0 --memory=128 --queue=default --sleep=3 --timeout=60 --tries=3 --supervisor=abc:supervisor-1
+akzonob+  841734  0.0  1.1 440596 45416 ?        S    Jun09   2:35 php artisan horizon:work redis --delay=0 --memory=128 --queue=default --sleep=3 --timeout=60 --tries=3 --supervisor=abc:supervisor-1
+akzonob+  841735  0.0  1.1 440616 44836 ?        S    Jun09   2:37 php artisan horizon:work redis --delay=0 --memory=128 --queue=default --sleep=3 --timeout=60 --tries=3 --supervisor=abc:supervisor-1
+akzonob+  841736  0.0  0.9 433116 38760 ?        S    Jun09   2:35 php artisan horizon:work redis --delay=0 --memory=128 --queue=default --sleep=3 --timeout=60 --tries=3 --supervisor=abc:supervisor-1
+akzonob+  841737  0.0  1.1 438456 44156 ?        S    Jun09   2:35 php artisan horizon:work redis --delay=0 --memory=128 --queue=default --sleep=3 --timeout=60 --tries=3 --supervisor=abc:supervisor-1
+akzonob+  841738  0.0  1.1 438408 44016 ?        S    Jun09   2:36 php artisan horizon:work redis --delay=0 --memory=128 --queue=default --sleep=3 --timeout=60 --tries=3 --supervisor=abc:supervisor-1
+akzonob+  841739  0.0  1.1 440504 45236 ?        S    Jun09   2:36 php artisan horizon:work redis --delay=0 --memory=128 --queue=default --sleep=3 --timeout=60 --tries=3 --supervisor=abc:supervisor-1
+akzonob+  841740  0.0  1.1 438412 44916 ?        S    Jun09   2:36 php artisan horizon:work redis --delay=0 --memory=128 --queue=default --sleep=3 --timeout=60 --tries=3 --supervisor=abc:supervisor-1
+akzonob+  841741  0.0  1.1 440520 45580 ?        S    Jun09   2:37 php artisan horizon:work redis --delay=0 --memory=128 --queue=default --sleep=3 --timeout=60 --tries=3 --supervisor=abc:supervisor-1
