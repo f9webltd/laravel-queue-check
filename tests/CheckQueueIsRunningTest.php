@@ -7,7 +7,6 @@ namespace F9Web\QueueCheck\Tests;
 use F9Web\QueueCheck\Events\QueueCheckFailed;
 use Illuminate\Support\Facades\Event;
 use Symfony\Component\Process\Process;
-
 use function config;
 
 class CheckQueueIsRunningTest extends TestCase
