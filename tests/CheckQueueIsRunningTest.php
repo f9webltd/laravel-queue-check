@@ -146,7 +146,7 @@ class CheckQueueIsRunningTest extends TestCase
 
         $this->command->handle();
 
-        $this->assertEquals("abc123\nabc1234\n", $this->command->getOutput());
+        $this->assertEquals("abc123\nabc1234\n", $this->command->getProcessOutput());
     }
 
     /** @test */
@@ -154,6 +154,6 @@ class CheckQueueIsRunningTest extends TestCase
     {
         $this->command->handle();
 
-        $this->assertInstanceOf(Process::class, $this->command->getProcess());
+        $this->assertInstanceOf(Process::class, $this->command->getProcessObject());
     }
 }

@@ -28,13 +28,13 @@ class CheckQueueIsRunning extends Command
     protected $description = 'Crudely, check if the Redis queue worker is running';
 
     /** @var string */
-    protected $output = '';
+    protected $commandOutput = '';
 
     /** @var int */
     protected $processCount = 0;
 
-    /** @var null */
-    protected $process = null;
+    /** @var \Symfony\Component\Process\Process|null */
+    protected $processObject = null;
 
     /**
      * Create a new command instance.
@@ -59,12 +59,12 @@ class CheckQueueIsRunning extends Command
         // the number of expected processes
         $expectedProcessCount = $options['processes'] ?? 1;
 
-        $process = $this->getProcess();
+        $process = $this->getProcessObject();
         $process->run();
 
-        $this->output = $process->getOutput();
+        $this->commandOutput = $process->getOutput();
 
-        foreach (explode(PHP_EOL, $this->output) as $line) {
+        foreach (explode(PHP_EOL, $this->commandOutput) as $line) {
             if (Str::contains($line, $expectedOutput)) {
                 $this->processCount++;
             }
@@ -74,28 +74,28 @@ class CheckQueueIsRunning extends Command
         // The process count differing to the expected count could
         // indicate issues too.
         if ($this->processCount < $expectedProcessCount) {
-            event(new QueueCheckFailed($this->output ?? ''));
+            event(new QueueCheckFailed($this->getProcessOutput() ?? ''));
         }
     }
 
     /**
      * @return \Symfony\Component\Process\Process|mixed
      */
-    public function getProcess()
+    public function getProcessObject()
     {
-        if (null === $this->process) {
-            return new Process(['ps', 'aux']);
+        if (null === $this->processObject) {
+            return $this->processObject = new Process(['ps', 'aux']);
         }
 
-        return $this->process;
+        return $this->processObject;
     }
 
     /**
      * @return string
      */
-    public function getOutput(): string
+    public function getProcessOutput(): string
     {
-        return $this->output;
+        return $this->commandOutput;
     }
 
     /**
@@ -103,7 +103,7 @@ class CheckQueueIsRunning extends Command
      */
     public function setProcess($process): void
     {
-        $this->process = $process;
+        $this->processObject = $process;
     }
 
     /**

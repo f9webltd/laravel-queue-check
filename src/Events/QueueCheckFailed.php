@@ -7,14 +7,14 @@ namespace F9Web\QueueCheck\Events;
 class QueueCheckFailed
 {
     /** @var string */
-    public $output;
+    public $processOutput;
 
     /**
-     * @param  string|null  $output
+     * @param  string|null  $processOutput
      */
-    public function __construct(?string $output)
+    public function __construct(?string $processOutput)
     {
-        $this->output = $output;
+        $this->processOutput = $processOutput;
     }
 
     /**
@@ -22,6 +22,6 @@ class QueueCheckFailed
      */
     public function getOutput(): ?string
     {
-        return $this->output ?? null;
+        return $this->processOutput ?? null;
     }
 }

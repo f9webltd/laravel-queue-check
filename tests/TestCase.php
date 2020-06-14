@@ -33,6 +33,10 @@ abstract class TestCase extends OrchestraTestCase
         ];
     }
 
+    /**
+     * @param  string  $stub
+     * @return \Illuminate\Support\HigherOrderTapProxy|mixed|\Mockery\LegacyMockInterface|\Mockery\MockInterface
+     */
     public function getMockedObject(string $stub)
     {
         return tap(m::mock(Process::class), function ($mock) use ($stub) {
