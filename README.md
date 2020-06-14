@@ -1,4 +1,4 @@
-[![Latest Stable Version](https://poser.pugx.org/f9webltd/laravel-queue-check/v)](https://packagist.org/packages/f9webltd/laravel-queue-check)
+[![Latest Stable Version](https://img.shields.io/packagist/v/f9webltd/laravel-queue-check.svg)](https://packagist.org/packages/f9webltd/laravel-queue-check)
 [![Scrutinizer coverage (GitHub/BitBucket)](https://img.shields.io/scrutinizer/coverage/g/f9webltd/laravel-queue-check)](https://packagist.org/packages/f9webltd/laravel-queue-check)
 [![Scrutinizer code quality (GitHub/Bitbucket)](https://img.shields.io/scrutinizer/quality/g/f9webltd/laravel-queue-check)](https://packagist.org/packages/f9webltd/laravel-queue-check)
 [![Build Status](https://travis-ci.org/f9webltd/laravel-queue-check.svg?branch=master)](https://travis-ci.org/f9webltd/laravel-queue-check)
