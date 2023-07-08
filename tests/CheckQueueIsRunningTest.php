@@ -7,6 +7,7 @@ namespace F9Web\QueueCheck\Tests;
 use F9Web\QueueCheck\Events\QueueCheckFailed;
 use Illuminate\Support\Facades\Event;
 use Symfony\Component\Process\Process;
+
 use function config;
 
 class CheckQueueIsRunningTest extends TestCase
@@ -46,6 +47,7 @@ class CheckQueueIsRunningTest extends TestCase
 
     /**
      * @test
+     *
      * @throws \Exception
      */
     public function it_fires_an_event_when_the_expected_process_is_running()
@@ -69,6 +71,7 @@ class CheckQueueIsRunningTest extends TestCase
 
     /**
      * @test
+     *
      * @throws \Exception
      */
     public function it_fires_an_event_when_the_expected_number_of_processes_are_not_running()
@@ -93,6 +96,7 @@ class CheckQueueIsRunningTest extends TestCase
 
     /**
      * @test
+     *
      * @throws \Exception
      */
     public function it_fetches_the_output()
@@ -117,6 +121,7 @@ class CheckQueueIsRunningTest extends TestCase
 
     /**
      * @test
+     *
      * @throws \Exception
      */
     public function it_passes_expected_data_to_the_event_class()

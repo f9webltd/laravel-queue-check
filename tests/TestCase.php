@@ -7,6 +7,7 @@ use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Symfony\Component\Process\Process;
 use Mockery as m;
 use F9Web\QueueCheck\Console\Commands\CheckQueueIsRunning;
+
 use function file_get_contents;
 use function tap;
 

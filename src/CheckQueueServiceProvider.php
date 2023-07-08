@@ -4,6 +4,7 @@ namespace F9Web\QueueCheck;
 
 use F9Web\QueueCheck\Console\Commands\CheckQueueIsRunning;
 use Illuminate\Support\ServiceProvider;
+
 use function config_path;
 
 class CheckQueueServiceProvider extends ServiceProvider
