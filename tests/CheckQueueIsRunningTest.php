@@ -31,7 +31,7 @@ class CheckQueueIsRunningTest extends TestCase
         config()->set(
             [
                 'f9web-queue-check.expected-output' => 'artisan horizon:work redis --delay=0 --memory=128',
-                'f9web-queue-check.processes'       => 10,
+                'f9web-queue-check.processes' => 10,
             ]
         );
 
@@ -81,7 +81,7 @@ class CheckQueueIsRunningTest extends TestCase
         config()->set(
             [
                 'f9web-queue-check.expected-output' => 'artisan abc123',
-                'f9web-queue-check.processes'       => 20,
+                'f9web-queue-check.processes' => 20,
             ]
         );
 
@@ -106,7 +106,7 @@ class CheckQueueIsRunningTest extends TestCase
         config()->set(
             [
                 'f9web-queue-check.expected-output' => 'artisan abc123',
-                'f9web-queue-check.processes'       => 20,
+                'f9web-queue-check.processes' => 20,
             ]
         );
 
